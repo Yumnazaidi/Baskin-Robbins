@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    width: 100%;
+}
+
+h1{
+    font-size: 55px;
+    line-height: 70px;
+    color: magenta
+}
+
+h2{
+    font-size: 48px;
+    line-height: 64px;
+    color: turquoise;
+}
+
+h4{
+    font-size: 28px;
+    color: red;
+}
+
+h6{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 20px;
+    color: purple;
+    margin: 15px 0 20px 0;
+}
+
+
+/* Home Page */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: pink;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0% 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s;
+}
+
+#navbar.active{
+    right: 0%;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: magenta;
+    position: absolute;
+    bottom: -4px;
+    left: 22px;
+}
+
+#ban{
+    background-image: url(images/banner.jpg);
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#ban h4{
+    padding-bottom: 15px;
+}
+
+#ban h1{
+    color: magenta;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 10px 10px 54px rgb(70, 62, 221, 0.1);
+    border: 1px solid #ffa600;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.356);
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 5px;
+    color: #9c6602;
+    background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6{
+    background-color: rgb(211, 160, 160);
+}
+
+#feature .fe-box:nth-child(4) h6{
+    background-color: lightyellow;
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color: lightcyan
+}
+
+#feature .fe-box:nth-child(6) h6{
+    background-color: lightblue;
+}
